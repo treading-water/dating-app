@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apply</title>
+    <link rel="stylesheet" href="src/apply.css">
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Dating Application
+        </h1>
+    </header>
+        
+
+    <main>
+        <form id="dating-application">
+            <section>
+                <h2>About You</h2>
+
+                <p>
+                    <label class="text-input" for="name">Your Name:</label>
+                    <input class="your-name" type="text" name="name" placeholder="Your Name" required>
+                </p>
+            </section>
+
+            <section>
+                <h2>Yearly Income</h2>
+                <label class="money" for="income" >Yo money?</label>
+                <select name="income" id="income" required>
+                    <option value="" hidden disabled selected>How much you got</option>
+                    <option value="high-income">Impressive</option>
+                    <option value="middle-income">Decent</option>
+                    <option value="low-income">Let's Go to Taco Bell</option>
+            </select>
+
+            <section>
+                <h2>Do you like Burritos?!</h2>
+                <input name="burrito" id="yes" value="yes" type="radio" required>
+                <label for="yes">Yes!</label>
+                <input name="burrito" id="no" value="no" type="radio" required>
+                <label for="no">No</label>
+            </section>
+
+            <section>
+                <h2>Cat people only</h2>
+                <fieldset>
+                    <legend>
+                        Stop kitten around.
+                    </legend>
+
+                    <label for="cat">Fondness for cats?</label>
+                    <input type="range" name="cat" id="cat" min="1" max="10">
+                <p>
+                    <label for="cat-number">Number of cats in your posession?</label>
+                    <input type="number" name="cat-number">
+                </p>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>Story Time</h2>
+                <label class="written-response" for="something-interesting">
+                Tell me something interesting:
+                </label>
+                <p>
+                    <textarea name="something-interesting" id="something-interesting"></textarea>
+                </p>
+            </section>
+
+            <section>
+                <h2>
+                    Moment of Truth
+                </h2>
+                <button>Apply, if you dare</button>
+            </section>
+        </form>
+    </main>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>

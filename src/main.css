@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.waves {
+    width: 10em;
+    height: auto;
+    display: inline-block;
+}
+
+.heart {
+    width: 10em;
+    margin-top: 5em;
+}
+
+body, h1 {
+    font-family: Josefin Sans, sans serif;
+}
