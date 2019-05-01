@@ -1,4 +1,5 @@
 import getApplicant from './get-applicant.js';
+import applicantApi from './applicant-api.js';
 
 // reference needed dom nodes
 const form = document.getElementById('dating-application');
@@ -8,6 +9,6 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
-
-    console.log(getApplicant(formData));
+    const applicant = getApplicant(formData);
+    applicantApi.save(applicant);
 });
