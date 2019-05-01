@@ -3,6 +3,9 @@ const test = QUnit.test;
 
 QUnit.module('applicant api');
 
+
+
+
 applicantApi.storage = sessionStorage;
 const testStorage = sessionStorage;
 
