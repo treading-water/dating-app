@@ -1,6 +1,6 @@
 function getApplicant(formData) {
     //convert data to variables
-    const likesBurrito = formData.get('burrito') === 'no';
+    const likesBurrito = formData.get('burrito') === 'yes';
     const cat = parseInt(formData.get('cat'));
     const catNumber = parseInt(formData.get('cat-number'));
 

@@ -6,7 +6,7 @@ test('creates potential date from form data', (assert) => {
     const expected = {
         name: 'Steve',
         income: 'Decent',
-        burrito: false,
+        burrito: true,
         cat: 9,
         catNumber: 3,
         somethingInteresting: 'buying flowers'
