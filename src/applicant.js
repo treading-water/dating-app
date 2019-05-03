@@ -9,13 +9,17 @@ const cat = document.getElementById('cat');
 const catNumber = document.getElementById('cat-number');
 const somethingInteresting = document.getElementById('something-interesting');
 
+// get the applicant name
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('name');
+
 //get our applicant from the api
-const applicant = applicantApi.get();
+const applicant = applicantApi.get(id);
 
 // no applicant? head back to home page...
-if(!applicant) {
-    window.location = './';
-}
+// if(!applicant) {
+//     window.location = './';
+// }
 
 // mediate data into the element
 name.textContent = applicant.name;

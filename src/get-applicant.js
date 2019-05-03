@@ -4,7 +4,6 @@ function getApplicant(formData) {
     const cat = parseInt(formData.get('cat'));
     const catNumber = parseInt(formData.get('cat-number'));
 
-
     //make our object literal
     const applicant = {
         name: formData.get('name'),

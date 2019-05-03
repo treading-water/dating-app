@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+body {
+    text-align: center;
+    background: linear-gradient(188deg, rgba(0,174,255,1) 26%, rgba(76,213,247,1) 50%, rgba(0,157,242,1) 73%);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.intro {
+    margin-top: -50px;
+}
+
+.question {
+    font-size: 1.5em;
+}
+
+a {
+    font-size: 2em;
+}
+
 .waves {
     width: 10em;
     height: auto;
@@ -14,3 +39,8 @@
 body, h1 {
     font-family: Josefin Sans, sans serif;
 }
+
+ /* .waves {
+    max-width:75%;
+    height:auto;
+} */
