@@ -1,3 +1,26 @@
-h1 {
-    text-align: center;
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 1.5em;
+}
+
+dt {
+    background: rgb(0, 86, 246);
+    color: white;
+    text-align: right;
+    padding-left: 30px;
+    font-size: 1.5em;
+}
+
+dt:after{
+    content: ":";
+}
+
+dd {
+    margin-left: 8px;;
 }
