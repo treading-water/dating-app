@@ -12,6 +12,7 @@ const applicantApi = {
     },
     get(name) {
         // use get all to fetch applicants
+     
         const applicants = applicantApi.getAll();
 
         for(let i = 0; i < applicants.length; i++) {

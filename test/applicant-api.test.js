@@ -13,7 +13,6 @@ test('round-trip applicant', (assert) => {
     // Set up your parameters and expectations
     const applicant1 = { name: 'tester1' };
     const applicant2 = { name: 'tester2' };
-
     
     //Act 
     // Call the function you're testing and set the result to a const
