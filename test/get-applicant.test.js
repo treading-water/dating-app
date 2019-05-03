@@ -6,7 +6,7 @@ test('creates potential date from form data', (assert) => {
     const expected = {
         name: 'Steve',
         income: 'Decent',
-        burrito: false,
+        burrito: 'yes',
         cat: 9,
         catNumber: 3,
         somethingInteresting: 'buying flowers'
@@ -15,7 +15,7 @@ test('creates potential date from form data', (assert) => {
     const formData = new FormData();
     formData.set('name', expected.name);
     formData.set('income', expected.income);
-    formData.set('burrito', 'No');
+    formData.set('burrito', 'yes');
     formData.set('cat', '9');
     formData.set('cat-number', '3');
     formData.set('something-interesting', expected.somethingInteresting);
